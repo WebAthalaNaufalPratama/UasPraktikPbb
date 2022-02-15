@@ -1,0 +1,316 @@
+#Operasi Menghitung Bangun datar
+
+pilihan = 1
+while pilihan != 0:
+    print("=============================================Silahkan pilih Bangun Datar!===========================================")
+    print('')
+    print('')
+    print("0. Exit")
+    print("1. Segitiga.")
+    print("2. Persegi.")
+    print("3. Persegi Panjang.")
+    print("4. Jajargenjang.")
+    print("5. Belah Ketupat.")
+    print("6. Layang - layang.")
+    print("7. Trapesium.")
+    print("8. Lingkaran.")
+
+    pilihan =int(input('Masukan Pilihan Bangun Datar Diatas (1/2/3/4/5/6/7/8)='))
+
+    print('')
+    print('')
+
+    if pilihan == 1:
+            print("=============================================Silahkan pilih Operasi Segitiga===========================================")
+            print('')
+            print('')
+            print("1. Luas.")
+            print("2. Keliling.")
+            print("0. Keluar")
+       
+            pilih=int(input("Masukan Pilihan Operasi Diatas (1/2)="))
+            
+            if pilih == 1:
+                a=int(input("Masukan Alas =")
+                t=int(input("Masukan Tinggi =")
+                        
+                def luas_Segitiga(a,t):
+                    L = 0.5 * a * t
+                    return L
+                
+                print('Jadi Segitiga dengan ukuran Alas:{}, tinggi:{} \nMempunyai luas:{}, M2 '.format(a,t, luas_Segitiga(a,t)))
+                      
+                lagi=''
+                while lagi!='y' and lagi!='t':
+                    lagi=input('INPUT LAGI [Y/T] : ')
+                    i+=1
+                if lagi=='t':
+                    break 
+
+            elif pilih == 2:
+                a=int(input("Masukan Sisi A ="))
+                b=int(input("Masukan Sisi B ="))
+                c=int(input("Masukan Sisi C ="))
+                def keliling_segitiga(a,b,c):
+                    k = a + b + c
+                    return k
+ 
+                print('Jadi Segitiga dengan ukuran Sisi A:{}, Sisi B:{}, Sisi C:{} \nMempunyai Keliling:{} '.format(a,b,c, keliling_segitiga(a,b,c)))
+
+            elif pilih == 0:
+                break
+                
+            else:
+                print("Inputan Salah")
+
+    elif pilihan == 2:
+        pilih = 1
+        while pilih != 0:
+            print("=============================================Silahkan pilih Operasi Persegi===========================================")
+            print('')
+            print('')
+            print("1. Luas.")
+            print("2. Keliling.")
+            print("0. Keluar.")
+
+            pilih=int(input("Masukan Pilihan Operasi Diatas (1/2)="))
+
+            if pilih == 1:
+                s=int(input("Masukan Sisi Persegi ="))
+                def Luas_persegi(s):
+                    L = s * s
+                    return L
+                    
+                print('Jadi Persegi dengan ukuran Sisi:{}, \nMempunyai luas:{} '.format(s, Luas_persegi(s)))
+
+            elif pilih == 2:
+                s=int(input("Masukan Sisi Persegi ="))
+                def keliling_persegi(s):
+                    k = s + s + s + s
+                    return k
+                
+                print('Jadi Persegi dengan ukuran Sisi:{}, \nMempunyai Keliling:{} '.format(s, keliling_persegi(s)))
+                
+            elif pilih == 0:
+                break
+
+            else:
+                print("Inputan Salah")
+
+    elif pilihan == 3:
+        pilih = 1
+        while pilih != 0:
+            print("=============================================Silahkan pilih Operasi Persegi Panjang===========================================")
+            print('')
+            print('')
+            print("1. Luas.")
+            print("2. Keliling.")
+            print("0. Keluar.")
+
+            pilih=int(input("Masukan Pilihan Operasi Diatas (1/2)="))
+
+            if pilih == 1:
+                p=int(input("Masukan Panjang dari Persegi Panjang ="))
+                l=int(input("Masukan Lebar dari Persegi panjang="))
+                def luas_persegi_panjang(p,l):
+                    L = p * l
+                    return L
+                
+                print('Jadi Persegi Panjang dengan ukuran Panjang:{}, Lebar:{}, \nMempunyai luas:{} '.format(p,l, Luas_persegi_panjang(p,l)))
+
+            elif pilih == 2:
+                p=int(input("Masukan Panjang dari Persegi Panjang ="))
+                l=int(input("Masukan Lebar dari Persegi panjang="))
+                def keliling_persegi_panjang(p,l):
+                    k = 2 * (p + l)
+                    return k
+                
+                print('Jadi Persegi Panjang dengan ukuran Panjang:{}, Lebar:{} \nMempunyai Keliling:{} '.format(p,l, keliling_persegi_panang(p,l)))
+                
+            elif pilih == 0:
+                break
+
+            else:
+                print("Inputan Salah")
+
+    elif pilihan == 4:
+        pilih = 1
+        while pilih != 0:
+            print("=============================================Silahkan pilih Operasi Jajargenjang===========================================")
+            print('')
+            print('')
+            print("1. Luas.")
+            print("2. Keliling.")
+
+            pilih=int(input("Masukan Pilihan Operasi Diatas (1/2)="))
+
+            if pilih == 1:
+                a=int(input("Masukan Alas Jajargenjang ="))
+                t=int(input("Masukan tinggi Jajargenjang="))
+                def luas_jajargenjang(a,t):
+                    L = a * t
+                    return L
+                
+                print('Jadi Jajargenjang dengan ukuran Alas:{}, tinggi:{} \nMempunyai luas:{} '.format(a,t, luas_Jajargenjang(a,t)))
+                
+            elif pilih == 2:
+                a=int(input("Masukan Sisi A dari Jajargenjang ="))
+                b=int(input("Masukan Sisi B dari Jajargenjang="))
+                def keliling_jajargenjang(a,b):
+                    k = 2 * (a + b)
+                    return k
+                
+                print('Jadi Jajargenjang dengan ukuran A:{}, B:{} \nMempunyai Keliling:{} '.format(a,b, keliling_jajargenjang(a,b)))
+                
+            elif pilih == 0:
+                break
+
+            else:
+                print("Inputan Salah")
+
+    elif pilihan == 5:
+        pilih = 1
+        while pilih != 0:
+            print("=============================================Silahkan pilih Operasi Belah Ketupat===========================================")
+            print('')
+            print('')
+            print("1. Luas.")
+            print("2. Keliling.")
+
+            pilih=int(input("Masukan Pilihan Operasi Diatas (1/2)="))
+
+            if pilih == 1:
+                d1=int(input("Masukan Diagonal 1 dari Belah Ketupat ="))
+                d2=int(input("Masukan Diagonal 2 dari Belah Ketupat="))
+                def luas_belah_ketupat(d1,d2):
+                    L = 0.5 * d1 * d2
+                    return L
+                
+                print('Jadi Belah Ketupat dengan ukuran Diagonal 1:{}, Diagonal 2:{} \nMempunyai luas:{} '.format(d1,d2, luas_belah_ketupat(d1,d2)))
+
+            elif pilih == 2:
+                s=int(input("Masukan Sisi dari Belah Ketupat ="))
+                def keliling_belah_ketupat(s):
+                    k = 4 * s
+                    return k
+                
+                print('Jadi Belah Ketupat dengan ukuran S:{}, \nMempunyai Keliling:{} '.format(s, keliling_belah_ketupat(s)))
+                
+            elif pilih == 0:
+                break
+
+            else:
+                print("Inputan Salah")
+
+    elif pilihan == 6:
+        pilih = 1
+        while pilih != 0:
+            print("=============================================Silahkan pilih Operasi Layang - layang===========================================")
+            print('')
+            print('')
+            print("1. Luas.")
+            print("2. Keliling.")
+
+            pilih=int(input("Masukan Pilihan Operasi Diatas (1/2)="))
+
+            if pilih == 1:
+                d1=int(input("Masukan Diagonal 1 dari Layang - layang ="))
+                d2=int(input("Masukan Diagonal 2 dari Layang - layang ="))
+                def luas_Layang_layang(d1,d2):
+                    L = 0.5 * d1 * d2
+                    return L
+                
+                print('Jadi Layang layang dengan ukuran Diagonal 1:{}, Diagonal 2:{} \nMempunyai luas:{} '.format(d1,d2, luas_Layang_layang(d1,d2)))
+
+            elif pilih == 2:
+                ab=int(input("Masukan Sisi AB dari Layang layang ="))
+                ad=int(input("Masukan Sisi AD dari Layang layang ="))
+                def keliling_layang_layang(ab,ad):
+                    k = 2 * (ab + ad)
+                    return k
+                
+                print('Jadi Layang layang dengan ukuran AB:{}, AD:{} \nMempunyai Keliling:{} '.format(ab,ad, keliling_layang_layang(ab,ad)))
+            
+            elif pilih == 0:
+                break
+
+            else:
+                print("Inputan Salah")
+
+    elif pilihan == 7:
+        pilih = 1
+        while pilih != 0:
+            print("=============================================Silahkan pilih Operasi Trapesium===========================================")
+            print('')
+            print('')
+            print("1. Luas.")
+            print("2. Keliling.")
+
+            pilih=int(input("Masukan Pilihan Operasi Diatas (1/2)="))
+
+            if pilih == 1:
+                at=int(input("Masukan Sisi Alas Atas dari Trapesium ="))
+                ab=int(input("Masukan Sisi Alas Bawah dari Trapesium ="))
+                t=int(input("Masukan Tinggi Trapesium="))
+                def luas_Trapesium(at,ab,t):
+                    L = 0.5 * (at + ab) * t
+                    return L
+                
+                print('Jadi Trapesium dengan ukuran Alas Atas :{}, Alas Bawah :{}, tinggi :{} \nMempunyai luas:{} '.format(at,ab,t, luas_Trapesium(at,ab,t)))
+
+            elif pilih == 2:
+                a=int(input("Masukan Sisi A dari Trapesium ="))
+                b=int(input("Masukan Sisi B dari Trapesium ="))
+                c=int(input("Masukan Sisi C dari Trapesium ="))
+                d=int(input("Masukan Sisi D dari Trapesium ="))
+                def keliling_Trapesium(a,b,c,d):
+                    k = a + b  + c + d
+                    return k
+                
+                print('Jadi Trapesium dengan ukuran A:{}, B:{}, C:{}, D:{} \nMempunyai Keliling:{} '.format(a,b,c,d, keliling_Trapesium(a,b,c,d)))
+                
+            elif pilih == 0:
+                break
+
+            else:
+                print("Inputan Salah")
+
+    elif pilihan == 8:
+        pilih = 1
+        while pilih != 0:
+            print("=============================================Silahkan pilih Operasi Lingkaran===========================================")
+            print('')
+            print('')
+            print("1. Luas.")
+            print("2. Keliling.")
+
+            pilih=int(input("Masukan Pilihan Operasi Diatas (1/2)="))
+
+            if pilih == 1:
+                r=int(input("Masukan Jari - jari ="))
+                def luas_Lingkaran(r):
+                    phi = 3.14
+                    L = phi * r * r
+                    return L
+                
+                print('Jadi Lingkaran dengan ukuran Jari jari :{}, \nMempunyai luas:{} '.format(r, luas_Lingkaran(r)))
+
+            elif pilih == 2:
+                d=int(input("Masukan Diameter ="))
+                def keliling_Lingkaran(d):
+                    phi = 3.14
+                    k = phi * d
+                    return k
+                
+                print('Jadi Lingkaran dengan ukuran Diameter:{}, \nMempunyai Keliling:{} '.format(d, keliling_Lingkaran(d)))
+                
+            elif pilih == 0:
+                break
+
+            else:
+                print("Inputan Salah")
+    elif pilihan == 0:
+        break
+
+    else:
+        print("Inputan Salah")
